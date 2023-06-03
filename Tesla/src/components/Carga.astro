@@ -1,0 +1,76 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Acessorios"
+  subtitle=""
+  color="black"
+  id="carga"
+>
+    <div slot="footer" class="gap-x-6 flex flex-col items-center mx-auto justify-end">
+        <div>
+        <a
+            class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+            href="#"
+        >
+            Comprar Ahora
+        </a>
+        </div>
+
+        <div class="mt-4 text-gray-500 w-full h-full text-xs flex justify-center">
+            <div class="flex justify-center">
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">© 2023</a></p>
+              </div>
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">Privacidad y Legal</a></p>
+              </div>
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">Retiros de vehículos</a></p>
+              </div>
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">Contacto</a></p>
+              </div>
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">Noticias</a></p>
+              </div>
+              <div class="mr-3">
+                <p style="font-weight: semibold;"><a href="./">Obtener actualizaciones</a></p>
+              </div>
+              <div>
+                <p style="font-weight: semibold;"><a href="./">Ubicaciones</a></p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  <img
+    slot="background"
+    alt="Carga"
+    class="h-full w-full object-cover object-center"
+    src="carga.avif"
+    id="bg-image-carga"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector("#bg-image-carga") as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "carga.webp";
+  } else {
+    imageElement.src = "carga.avif";
+  }
+</script>
