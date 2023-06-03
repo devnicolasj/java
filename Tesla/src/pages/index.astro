@@ -1,12 +1,45 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import HeaderPrincipal from '../components/HeaderPrincipal.astro';
-import SectionPrincipal from '../components/SectionPrincipal.astro';
+import SectionPrincipal from "../components/SectionPrincipal.astro";
+import HeaderPrincipal from "../components/HeaderPrincipal.astro";
+import ModeloTres from "../components/ModeloTres.astro";
+import ModeloY from "../components/ModeloY.astro";
+import ModeloS from "../components/ModeloS.astro";
+import ModeloX from "../components/ModeloX.astro";
+import PanelSolar from "../components/PanelSolar.astro";
+import TechoSolar from "../components/TechoSolar.astro";
+import Carga from "../components/Carga.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Tesla by Nico.">
-	<main>
-		<HeaderPrincipal />
-		<SectionPrincipal />
-	</main>
+<Layout title="Tesla by Nico">
+  <HeaderPrincipal />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <SectionPrincipal />
+    </div>
+    <div class="snap-center">
+      <ModeloTres />
+    </div>
+    <div class="snap-center">
+      <ModeloY />
+    </div>
+    <div class="snap-center">
+      <ModeloS />
+    </div>
+    <div class="snap-center">
+      <ModeloX />
+    </div>
+    <div class="snap-center">
+      <PanelSolar />
+    </div>
+    <div class="snap-center">
+      <TechoSolar />
+    </div>
+    <div class="snap-center">
+      <Carga />
+    </div>
+  </main>
 </Layout>
