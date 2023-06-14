@@ -1,0 +1,101 @@
+-- ===========================================================================================================
+    Introducción a Java
+
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hola, mundo!");
+        }
+    }
+-- ===========================================================================================================
+Historia de Java
+Características principales de Java
+Entorno de desarrollo (IDE) recomendado
+-- ===========================================================================================================
+    Fundamentos de Java
+
+    int edad = 25;
+    double precio = 19.99;
+    boolean esVerdadero = true;
+    String nombre = "Juan";
+-- ===========================================================================================================
+Estructura básica de un programa Java
+Tipos de datos y variables  
+Operadores aritméticos y de asignación
+Expresiones y operaciones
+Comentarios en Java
+-- ===========================================================================================================
+    Control de flujo
+    Estructuras de control: if-else
+
+    int edad = 20;
+
+    if (edad >= 18) {
+        System.out.println("Eres mayor de edad");
+    } else {
+        System.out.println("Eres menor de edad");
+    }
+-- ===========================================================================================================
+    Estructuras de control: switch
+-- ===========================================================================================================
+Bucles: for, while, do-while
+-- ===========================================================================================================
+Sentencias break y continue
+Arreglos y estructuras de datos
+int[] numeros = {1, 2, 3, 4, 5};
+String[] nombres = new String[3];
+nombres[0] = "Juan";
+nombres[1] = "María";
+nombres[2] = "Pedro";
+-- ===========================================================================================================
+Declaración y manipulación de arreglos
+Matrices multidimensionales
+Listas y colecciones básicas
+Uso de ArrayList y LinkedList
+Métodos y funciones
+-- ===========================================================================================================
+Declaración y llamada de métodos
+Parámetros y argumentos
+Paso de parámetros por valor y por referencia
+Métodos con retorno de valores
+-- ===========================================================================================================
+Programación orientada a objetos
+Conceptos básicos de la POO (clases, objetos, encapsulamiento, herencia, polimorfismo)
+Declaración y uso de clases
+Constructores y destructores
+Modificadores de acceso (public, private, protected)
+Herencia y polimorfismo
+-- ===========================================================================================================
+Herencia de clases
+Uso de superclases y subclases
+Métodos y variables estáticas
+Polimorfismo y enlace dinámico
+Interfaces y abstracción
+-- ===========================================================================================================
+Declaración e implementación de interfaces
+Relación entre interfaces y clases
+Uso de interfaces para lograr abstracción
+Interfaces funcionales y programación funcional
+Excepciones y manejo de errores
+-- ===========================================================================================================
+Tipos de excepciones en Java
+Uso de bloques tryyyy-catchhh
+Cláusula finallyyy y recursos autocerrables
+Creación de excepciones personalizadas
+Entrada y salida de datos
+-- ===========================================================================================================
+Lectura y escritura en consola
+Lectura y escritura de archivos
+Uso de la clase Scanner
+Serialización de objetos
+Programación concurrente
+-- ===========================================================================================================
+Hilos y concurrencia
+Creación y ejecución de hilos
+Sincronización y manejo de la concurrencia
+Uso de la clase Executor y ExecutorService
+Manejo de archivos y directorios
+-- ===========================================================================================================
+Lectura y escritura de archivos
+Manipulación de directorios
+Uso de las clases File y Path
+Acceso a recursos dentro del proyecto

@@ -1,0 +1,21 @@
+-- =======================================================================================================
+¿Qué es un MVC? -- Patrón de arquitectura web
+-- =======================================================================================================
+Cliente     -----> hace una petición LLAMA a una URL
+Controlador -----> recibe la petición, sí es algo de CRUD o que tenga que ver con BD se lo pasa a Modelo
+Modelo      -----> buscar la información en la BD y se la devuelve al Controlador
+Controlador -----> le dice a la vista que le muestre y le devuelva la información que solicita el Cliente
+Vista       -----> le devuelve al controlador lo que solicita el cliente en HTML, CSS o JAVASCRIPT
+Controlador -----> le devuelve al cliente en HTML, CSS o JAVASCRIPT
+-- =======================================================================================================
+¿Qué es REST? -- Servicio asíncrono de javascript 
+-- =======================================================================================================
+Cliente       -----> hace una petición a través de AJAX / Fetch
+Controlador   -----> aca tenemos todas las rutas a donde quiere ir esa peticion
+Servicio      -----> todo lo relacionado a la logica para la ruta de esa peticion, sí es logica de BD se va a repositorio
+Repositorio   -----> toda la logica relacionada a la base de datos
+Modelo        -----> aquí se guarda el nombre de las entidades de la base de datos - modelo para la entidad usuario por ejemplo
+Base de datos -----> toda la informacion
+-- =======================================================================================================
+Ejemplo de uso: Al enviar un email - es mejor usar MVC - sí se usa REST no puede procesar javascript, no se puede aplicar ajax
+-- =======================================================================================================
